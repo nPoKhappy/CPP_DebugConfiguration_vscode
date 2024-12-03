@@ -2,10 +2,10 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build",
+            "label": "Build", // Must be the same as lauch.json name
             "type": "shell",
             "command": "g++",
-            "args": [
+            "args": [ // the full commen would be gcc -g filename(ex. Hello_World.cpp) -o Hello_World.exe
                 "-g",
                 "${file}",
                 "-o",

@@ -2,15 +2,15 @@
   "version": "0.2.0",
   "configurations": [
       {
-          "name": "Debug",
+          "name": "Debug", // Make sure the name is the same as task.json label, this name is also the name of debug config name
           "type": "cppdbg",
           "request": "launch",
-          "program": "${fileDirname}/${fileBasenameNoExtension}",
+          "program": "${fileDirname}/${fileBasenameNoExtension}", // Exe for gdb debug
           "args": [],
-          "stopAtEntry": false,
-          "cwd": "${fileDirname}",
+          "stopAtEntry": false, // Wheter to stop at the program entrance
+          "cwd": "${fileDirname}", 
           "environment": [],
-          "externalConsole": true,
+          "externalConsole": true, // Whether open a cmd for input or output
           "MIMode": "gdb",
           "setupCommands": [
               {
